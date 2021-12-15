@@ -1,0 +1,45 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: ClusterServiceVersion
+metadata:
+  annotations:
+    alm-examples: '[]'
+    capabilities: Basic Install
+  name: patch-operator-bkp.v0.0.0
+  namespace: placeholder
+spec:
+  apiservicedefinitions: {}
+  customresourcedefinitions:
+    owned:
+    - description: Patch is the Schema for the patches API
+      displayName: Patch
+      kind: Patch
+      name: patches.redhatcop.my.domain
+      version: v1
+  description: test
+  displayName: tets
+  icon:
+  - base64data: ""
+    mediatype: ""
+  install:
+    spec:
+      deployments: null
+    strategy: ""
+  installModes:
+  - supported: false
+    type: OwnNamespace
+  - supported: false
+    type: SingleNamespace
+  - supported: false
+    type: MultiNamespace
+  - supported: true
+    type: AllNamespaces
+  keywords:
+  - test
+  links:
+  - name: Patch Operator Bkp
+    url: https://patch-operator-bkp.domain
+  maturity: alpha
+  provider:
+    name: test
+    url: test
+  version: 0.0.0
